@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.contact-container {
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+.glass-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.glass-card p {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 0.8rem;
+  background: rgb(255, 255, 255);
+  color: white;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: #00c9ff;
+  color: #fff;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0096c7;
+}
+
+.socials {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(90%);
+  transition: transform 0.2s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+  filter: brightness(100%);
+}
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+body.dark {
+  background: linear-gradient(120deg, #1e1e2f, #283e51);
+  color: #f1f1f1;
+}
+
+body.dark input,
+body.dark textarea {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f1f1f1;
+}
+
+body.dark .glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.socials i {
+  font-size: 28px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.socials i:hover {
+  transform: scale(1.2);
+  color: #00c9ff;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <header class="profile-header">
+      <img src="D:\JAVA\my-website\images\web_profile.png" alt="Profile Photo" class="profile-pic" />
+      <h1>Hello, I'm <span id="name">Akshit Sharma</span> 👋</h1>
+      <p class="tagline">Web Developer | Learner | Creator</p>
+      <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+    </header>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I love building user-friendly websites and learning new technologies. I'm exploring full-stack web development and working on cool projects!
+      </p>
+    </section>
+
+    <section class="links">
+      <h2>Connect with Me</h2>
+      <ul>
+        <li><a href="https://github.com/AkkiNotAvailable" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/akshit-sharma-b29788267/" target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:akshits055@gmail.com">Email Me</a></li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <button onclick="changeTheme()">Toggle Theme</button>
+
+    <footer>
+      <p>© <span id="year"></span> Your Name</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
